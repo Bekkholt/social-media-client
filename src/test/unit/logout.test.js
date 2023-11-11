@@ -1,5 +1,5 @@
 import { logout } from "../../js/api/auth/logout";
-import { localStorageMock } from "./login.test";
+import { localStorageMock } from "./localstoragemock";
 import { globalFetch } from "./login.test";
 
 global.localStorage = localStorageMock;
