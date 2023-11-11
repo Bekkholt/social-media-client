@@ -8,7 +8,7 @@ describe('Logout', () => {
         cy.get('#loginEmail').type('tina.testuser@noroff.no')
         cy.get('#loginPassword').type('password1234')
         cy.get('#loginForm').submit()
-        cy.wait(1000)
+        cy.wait(1500)
         cy.window().its('localStorage.token').should('exist');
         cy.get('button').contains('Logout').click()
         cy.window().its('localStorage.token').should('not.exist');
