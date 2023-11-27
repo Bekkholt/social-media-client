@@ -1,7 +1,5 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "cypress";
 
-module.exports = defineConfig({
-  e2e: {
-    baseUrl: 'https://bekkholt.github.io/social-media-client/',
-  },
+export default defineConfig({
+  e2e: {},
 });
